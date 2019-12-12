@@ -12,5 +12,8 @@ def print_first_directors_movie_titles
   movies = nds[0][:movies]
   index = 0 
   while index < movies.count
-    movie_title = movies[]
+    movie_title = movies[index][:title]
+    puts movie_title
+    index += 1 
+  end 
 end
